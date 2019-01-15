@@ -31,14 +31,14 @@ function createPicsHolders() {
     createAapImages();
 
     function maakFavoriet(id) {
-        console.log("Maak mij Favoriet! Het gaat om aap" + id );
-        notsofavoriet = document.getElementsByClassName("favoriet");
-        for (var i = 0; i < notsofavoriet.length ; i++) {
-            notsofavoriet[i].style.backgroundImage = "none";
-        }
-
-        favoriet = document.getElementById("favoriet" + id);
-        favoriet.style.backgroundImage = "url('img/wittehart.jpg')";
+    console.log("Maak mij Favoriet! Het gaat om aap" + id );
+    notsofavoriet = document.getElementsByClassName("favoriet");
+    for (var i = 0; i < notsofavoriet.length ; i++) {
+        notsofavoriet[i].style.backgroundImage = "none";
     }
+
+    favoriet = document.getElementById("favoriet" + id);
+    favoriet.style.backgroundImage = "url('img/wittehart.jpg')";
+}
 
 }
